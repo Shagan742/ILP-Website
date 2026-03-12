@@ -18,19 +18,38 @@
         />
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="services.css">
-    </head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Modern+Antiqua&family=Qwigley&family=Raleway:ital,wght@0,100..900;1,100..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">    </head>
 
     <body>
         <header>
             <!-- place navbar here -->
+             <nav class="navbar navbar-expand-lg fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html"><img src="imgs/logo.png" alt="Inner Light Pathways Logo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link" href="about.html">About</a>
+                        <a class="nav-link" href="services.html">Services</a>
+                        <a class="nav-link" href="schedule.html">Schedule</a>
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </div>
+                    </div>
+                </div>
+            </nav>
         </header>
         <main>
            <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> 
         </main>
         <footer style="background-color: black; color:white;" class="fixed-bottom">
             <!-- place footer here -->
-            <div class="row d-flex justify-content-center p-5">
-                <div class="col-4">
+           <div class="row d-flex text-center align-items-center justify-content-center p-5" style="height:100%;">
+                <div class="col-md-4">
                     <h2>STUDIO</h2>
                     <p>
                         360 Main St., Suite 5 
@@ -42,25 +61,26 @@
                     </p>
                     <h2><a href="index.html">HOME</a></h2>
                 </div>
-                <div class="col-4">
-                    <img src="imgs/logo.png" alt="Inner Light Pathways Logo" class="img-fluid">
+                <div class="col-md-4">
+                    <img src="imgs/logo.png" alt="Inner Light Pathways Logo">
+                    <br>
                     <br>
                     <p>LET'S CONNECT!</p>
                     <br>
                     <div class="row">
                         <div class="col-4">
-                            <a href="https://www.facebook.com/innerlightpathways" target="_blank">
-                                <img src="imgs/facebook.png" alt="Facebook" class="img-fluid">
+                            <a href="#" target="_blank">
+                                <img src="#" alt="Facebook" class="img-fluid">
                             </a>
                         </div>
                         <div class="col-4">
-                            <a href="https://www.instagram.com/innerlightpathways" target="_blank">
-                                <img src="imgs/instagram.png" alt="Instagram" class="img-fluid">
+                            <a href="#" target="_blank">
+                                <img src="#" alt="Instagram" class="img-fluid">
                             </a>
                         </div>
                         <div class="col-4">
-                            <a href="https://www.youtube.com/innerlightpathways" target="_blank">
-                                <img src="imgs/youtube.png" alt="YouTube" class="img-fluid">
+                            <a href="#" target="_blank">
+                                <img src="#" alt="Email" class="img-fluid">
                             </a>
                         </div>
                     </div>
@@ -68,7 +88,7 @@
                     <p>© 2025 INNER LIGHT PATHWAYS LLC
                         <br> ALL RIGHTS RESERVED</p>
                 </div>
-                <div class="col-4">
+                <div class="col-md-4">
                     <h2><a href="#">TERMS & CONDITIONS</a></h2>
                     <h2><a href="#">PRIVACY POLICY</a></h2>
                 </div>

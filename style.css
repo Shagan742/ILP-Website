@@ -1,0 +1,55 @@
+html {
+    overflow-x: hidden;
+}
+body {
+    padding-top:150px;
+}
+
+* {
+    font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.catPena {
+    font-family: "Qwigley", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size:60px;
+}
+
+.navbar {
+    background-color: white;
+}
+.navbar-brand img {
+    width: 60px;
+    height:60px;
+}
+
+
+#offeringPathways img {
+    width: 600px;
+    height:600px;
+}
+
+#offeringPathways p {
+    font-size:20px;
+}
+
+footer img {
+    width: 150px;
+    height:150px;
+}
+
+.btn-outline, .btn-outline a {
+    color: #C57B57;
+    border-color: #C57B57;
+    text-decoration: none;
+    font-size:20px;
+}
+
+footer {
+     background-color: black; 
+     color:white; 
+     margin-top:30px;
+}
