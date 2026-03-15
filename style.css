@@ -1,3 +1,4 @@
+/* universal alignment + styles */
 html {
     overflow-x: hidden;
 }
@@ -11,13 +12,21 @@ body {
   font-style: normal;
 }
 
-.catPena {
-    font-family: "Qwigley", cursive;
-  font-weight: 400;
-  font-style: normal;
-  font-size:60px;
+*::-webkit-scrollbar {
+  width: 6px;               /* width of scrollbar */
 }
 
+*::-webkit-scrollbar-track {
+  background: #ffffff;      /* track background */
+  border-radius: 4px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.486);          /* scrollbar handle color */
+  border-radius: 4px;
+}
+
+/* navbar */
 .navbar {
     background-color: #E6CCB2;
     box-shadow:0px 0px 15px 1px rgba(0, 0, 0, 0.235);
@@ -29,12 +38,21 @@ body {
     border-radius: 100%;
 }
 
+/* section  1 - home pg */
+
 #offeringPathways {
     background-color: #F5F9FC;
 }
 
 .reikiYogaSound {
     background-color: white;
+}
+
+.catPena {
+    font-family: "Qwigley", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size:60px;
 }
 
 #offeringPathways img {
@@ -45,6 +63,15 @@ body {
 #offeringPathways p {
     font-size:20px;
 }
+
+.btn-outline, .btn-outline a {
+    color: #C57B57;
+    border-color: #C57B57;
+    text-decoration: none;
+    font-size:20px;
+}
+
+/* section 2, 3, 4 - home pg */
 #reiki {
     background-image: url('imgs/reiki.jpeg');
     background-position: center;
@@ -71,9 +98,6 @@ body {
     box-shadow:0px 0px 15px 1px rgba(0, 0, 0, 0.235);
 }
 
-#reviews {
-    background-color: #F5F9FC;
-}
 #reiki .row, #yoga .row, #sound .row {
     height: 350px;
     margin-top: 200px;
@@ -94,13 +118,78 @@ body {
     color:white;
 }
 
+/* section 5- home pg */
 #reviews {
+    background-color: #F5F9FC;
     height:auto;
     margin-top: 200px;
     margin-bottom:200px;
 }
 
 
+.card-title {
+    font-size:30px;
+    font-weight: 500;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: black;
+    border-radius: 100%;
+    padding:10%;
+
+}
+
+
+/* section 1, 2, 3 - about pg */
+#freqAskedQues, #meetCatherine {
+    margin-top: 200px;
+    margin-bottom:200px;
+    padding:25px;
+}
+
+#location, #meetCatherine {
+    background-color: #F0EFEB;
+    margin-top:50px;
+    box-shadow:0px 0px 15px 1px rgba(0, 0, 0, 0.235);
+    padding:25px;
+}
+
+#location p {
+    font-size:20px;
+}
+
+#freqAskedQues {
+    background-color: #E6CCB2;
+    box-shadow:0px 0px 15px 1px rgba(0, 0, 0, 0.235);
+}
+
+#accordionExample, .accordion {
+    border-radius:5px;
+}
+.accordion-item, .accordion-button {
+    background: transparent;
+    border:1px solid black;
+}
+
+.accordion-button:not(.collapsed) {
+    background:rgba(0, 0, 0, 0.235);
+    color:white;
+     box-shadow:none;
+    border-radius:5px;
+}
+
+#freqAskedQues li, #accordionExample p {
+    text-align: left;
+}
+
+#accordionExample a {
+    color:black;
+}
+
+#meetCatherine li, #meetCatherine p {
+    font-size:20px;
+}
+
+/* footer */
 footer img {
     width: 150px;
     height:150px;
@@ -116,39 +205,6 @@ footer p {
 
 footer a {
     text-decoration: none;
-}
-
-.btn-outline, .btn-outline a {
-    color: #C57B57;
-    border-color: #C57B57;
-    text-decoration: none;
-    font-size:20px;
-}
-
-.card-title {
-    font-size:30px;
-    font-weight: 500;
-}
-
-*::-webkit-scrollbar {
-  width: 6px;               /* width of scrollbar */
-}
-
-*::-webkit-scrollbar-track {
-  background: #ffffff;      /* track background */
-  border-radius: 4px;
-}
-
-*::-webkit-scrollbar-thumb {
-  background: rgba(0, 0, 0, 0.486);          /* scrollbar handle color */
-  border-radius: 4px;
-}
-
-.carousel-control-prev-icon, .carousel-control-next-icon {
-    background-color: black;
-    border-radius: 100%;
-    padding:10%;
-
 }
 
 footer {

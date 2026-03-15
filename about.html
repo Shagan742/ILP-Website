@@ -32,8 +32,8 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                        <a class="nav-link" href="about.html">About</a>
+                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link active" aria-current="page" href="about.html">About</a>
                         <a class="nav-link" href="services.html">Services</a>
                         <a class="nav-link" href="schedule.html">Schedule</a>
                         <a class="nav-link" href="contact.html">Contact</a>
@@ -43,7 +43,145 @@
             </nav>
         </header>
         <main id="app">
-            
+            <section id="location">
+                <div class="row mx-3 text-center d-flex justify-content-center align-items-center">
+                    <div class="col-md-10">
+                        <h1>Location</h1>
+                        <br>
+                        <br>
+                        <div class="row d-flex justify-content-center align-items-center">
+                            <div class="col-12 col-md-6 my-3">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.3288582227806!2d-74.24396775299357!3d40.40156499803224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3cd89c5b6e263%3A0xb7a027240235c505!2sInner%20Light%20Pathways%20-%20Reiki%20Yoga%20Sound!5e0!3m2!1sen!2sus!4v1772854261383!5m2!1sen!2sus" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                            <div class="col-md-6" style="text-align: left;">
+                                <p>
+                                    360 Main St, Suite 5 Matawan, NJ 07747 
+                                    <br>
+                                    (Trail Side Plaza – Henry Hudson Trail runs alongside the building.) 
+                                    <br>
+                                    Entrance is on the side of the building. Upon entering, follow the purple path.
+                                    <br>
+                                    <br>
+                                    At home sessions are available for those who are unable to leave their home or would simply like to relax in their own environment. (Subject to travel fee).
+                                </p>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="row d-flex justify-content-center align-items-center">
+                            <div class="col-8">
+                                <h2>Hours</h2>
+                                <br>
+                                <p>
+                                    Hours vary depending on classes, workshops and private sessions are being conducted.
+                                    <br>
+                                    To see available times, use the BOOK feature to select a date and time for the service.
+                                </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+            <section id="freqAskedQues">
+                <div class="row text-center d-flex justify-content-center align-items-center">
+                    <div class="col">
+                        <h1>Frequently Asked Questions</h1>
+                        <br>
+                        <br>
+                        <div class="accordion" id="accordionExample" style="overflow-y: auto; max-height:400px;">
+                            <div class="accordion-item" v-for="(ques, index) in questions">
+                                <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" v-html="ques.question" type="button" data-bs-toggle="collapse" :data-bs-target="'#collapse' + index" aria-expanded="false" :aria-controls="'collapse' + index"></button>
+                                </h2>
+                                <div :id="'collapse' + index" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body" v-html="ques.answer"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+            <section id="meetCatherine">
+                <div class="row text-center d-flex justify-content-center align-items-center">
+                    <div class="col">
+                        <h1>Meet Catherine Peña</h1>
+                        <br>
+                        <div class="row d-flex align-items-center justify-content-center mx-3">
+                            <div class="col-md-6 col-12" style="text-align: left;">
+                                <p>
+                                    Throughout the years, I’ve gathered a bounty of tools and techniques that help transform pain into power and adversity into strength. My passion for healing has lead me to explore many pathways that lead to connecting with the inner light that is present in all of us.
+                                    <br><br>
+                                    <strong>The services I offer are pathways that I have personally walked</strong>, continue to walk, and that have personally helped me on my journey. I wish to share them with those who are in search of a path that, although may be challenging at time, leads to divine alignment….and that comes with ease.
+                                    <br><br>
+                                    <strong>I have an intimate appreciation and understanding of the value of facing the shadows and transmuting them into light.</strong>
+                                    <br><br>
+                                    My purpose is to help guide and empower each individual on their own unique path so they may tap into the innate wisdom and healing already present within. 
+                                </p>
+                            </div>
+                            <div class="col-md-6 col-12">
+                                <img src="imgs/cat1About.jpg" class="my-3" style="height:500px; width:auto;" alt="Catherine Peña">
+                            </div>
+                            <br><br>
+                            <p class="catPena my-5" style="background-color: black; color:#CFA84A; width:fit-content; border-radius: 5px; font-size:55px;">My passion is to help you connect with your inner light.</p>
+                        </div>
+                        <div class="row d-flex align-items-center justify-content-center mx-3">
+                            <h2 class="mb-5">Catherine in a Nutshell</h2>
+                            <div class="col-md-6 col-12">
+                                <img src="imgs/cat2About.jpg" class="my-3" style="height:500px; width:auto;" alt="Catherine Peña">
+                            </div>
+                            <div class="col-md-6 col-12" style="text-align: left;">
+                                <h3><em>Reiki Master + Yoga Teacher  + Gongstress</em></h3>
+                                <ul>
+                                    <li>Certified 9th Generation Reiki Master Teacher & Practitioner in the Usui Reiki line.</li>
+                                    <li>Master Gong & Sound Therapist.</li>
+                                    <li>500 Hour Trauma Informed RYT Yoga Teacher (Kundalini ; Hatha ; Vinyasa ; Mindfulness ; Meditation).</li>
+                                </ul>
+                                <br>
+                                <h4 style="text-align: center;"><strong>I'm also:</strong></h4>
+                                <ul>
+                                    <li>Mat Pilates Instructor</li>
+                                    <li>Shamanic Practitioner</li>
+                                    <li>Grief Educator (in training)</li>
+                                    <li>Qi Gong  Level 1 Teacher (in training)</li>
+                                    <li>Bilingal (Spanish)</li>
+                                    <li>Master Gardener through Rutgers Cooperative Extension.</li>
+                                    <li>Mortgage guide with 20+ years in processing & originating residential mortgages (prior to this shift).</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <br><br>
+                        <div class="row d-flex align-items-center justify-content-center mx-3">
+                            <div class="col-md-6 col-12" style="text-align: left;">
+                                <p>
+                                    The modalities I work with address emotional, mental, spiritual, energetic, physical and environmental aspects.
+                                </p>
+                                <ul>
+                                    <li>Breath Practices</li>
+                                    <li>Somatic Movement</li>
+                                    <li>Guided Meditation</li>
+                                    <li>Functional Strength Training</li>
+                                    <li>Energy Balancing</li>
+                                    <li>Quantum Healing</li>
+                                    <li>Singing bowls, Gongs, Tuning Forks</li>
+                                    <li>Mantras</li>
+                                    <li>Ayurvedic Principles</li>
+                                    <li>Emotional Freedom Techniques</li>
+                                    <li>Enneagram Types</li>
+                                    <li>Healthier Living Protocols</li>
+                                    <li>Healing Foods</li>
+                                    <li>Herbal Blends</li>
+                                    <li>Crystals</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6 col-12">
+                                <img src="imgs/cat3About.jpg" class="my-3" style="height:500px; width:auto;" alt="Catherine Peña">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
            <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> 
         </main>        
         <footer>

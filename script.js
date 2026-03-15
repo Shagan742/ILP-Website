@@ -4,14 +4,17 @@ const app = Vue.createApp({
       this.reviews = json
       console.log(this.reviews)
     })
+
+    fetch('questions.json').then(response => response.json()).then(json => {
+      this.questions = json
+      console.log(this.questions)
+    })
   },
     data() {
         return {
-            reviews: []
+            reviews: [],
+            questions: []
         }
-    },
-    methods: {
-
     },
     computed: {
         threeCardsPerSlide() {
