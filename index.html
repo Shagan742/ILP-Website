@@ -43,7 +43,7 @@
             </nav>
         </header>
         <main id="app">
-            <section id="offeringPathways" class="mb-5">
+            <section id="offeringPathways">
                 <div class="row text-center align-items-stretch">
                     <div class="col-md-5 p-0">
                         <img src="imgs/me-for-site-300x300.png" alt="Catherine Peña" class="img-fluid w-100 h-100 object-fit-cover">
@@ -60,7 +60,6 @@
                             <br>
                             <h3 class="catPena">Catherine Peña</h3>
                             <br>
-                            <br>
                             <div class="btn-group reikiYogaSound" role="group" aria-label="Basic outlined example">
                                 <button type="button" class="btn btn-outline"><a href="services.html#reiki">Reiki</a></button>
                                 <button type="button" class="btn btn-outline"><a href="services.html#yoga">Yoga</a></button>
@@ -70,7 +69,7 @@
                 </div>
             </section>
             <section id="reiki">
-                <div class="row text-center d-flex justify-content-center align-items-center">'
+                <div class="row text-center d-flex justify-content-center align-items-center">
                     <div class="col">
                         <h2>Reiki</h2>
                         <p>Put your body into the optimal state to promote its own healing and wellness.</p>
@@ -78,7 +77,7 @@
                 </div>
             </section>
             <section id="yoga">
-                <div class="row text-center d-flex justify-content-center align-items-center">'
+                <div class="row text-center d-flex justify-content-center align-items-center">
                     <div class="col">
                         <h2>Yoga</h2>
                         <p>Safe and accessible yoga for beginners seeking mind-body connection.</p>
@@ -86,7 +85,7 @@
                 </div>
             </section>
             <section id="sound">
-                <div class="row text-center d-flex justify-content-center align-items-center">'
+                <div class="row text-center d-flex justify-content-center align-items-center">
                     <div class="col">
                         <h2>Sound</h2>
                         <p>Sound vibrations to reduce stress, restore balance, and align.</p>
@@ -94,7 +93,39 @@
                 </div>
             </section>
             <section id="reviews">
-                
+                    <div id="carouselExample" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item" v-for="(bunch, index) in threeCardsPerSlide" :key="index" :class="{ active: index === 0 }">
+                                <div class="row d-flex justify-content-center align-items-center">
+                                    <div class="col-md-3 my-5 col-sm-10 d-flex justify-content-center" v-for="(rev, revIndex) in bunch">
+                                        <div class="card" style="height:500px; max-width:300px; overflow-y: auto;">
+                                            <div class="card-body" :class="{ 'd-flex flex-column justify-content-center text-center': index===threeCardsPerSlide.length-1 && revIndex===bunch.length-1}">
+                                                <h5 class="card-title">{{rev.stars}}</h5>
+                                                <p class="card-text">{{rev.review}}</p>
+                                                <p class="card-text2" v-if="!(index === threeCardsPerSlide.length - 1 && revIndex === bunch.length - 1)">
+                                                    <strong>{{rev.name}}</strong>
+                                                    <br>
+                                                    {{rev.date}}
+                                                </p>
+
+                                                <a class="card-text2" v-else target="_blank" href="https://g.page/r/CQXFNQIkJ6C3EBM/review">
+                                                    {{rev.name}}
+                                                </a>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
             </section>
            <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> 
         </main>
@@ -114,25 +145,25 @@
                     <h2><a href="index.html">HOME</a></h2>
                 </div>
                 <div class="col-md-4">
-                    <img src="imgs/logo.png" alt="Inner Light Pathways Logo">
+                    <img src="imgs/logoTransparent.png" alt="Inner Light Pathways Logo">
                     <br>
                     <br>
                     <p>LET'S CONNECT!</p>
                     <br>
-                    <div class="row">
-                        <div class="col-4">
-                            <a href="#" target="_blank">
-                                <img src="#" alt="Facebook" class="img-fluid">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-auto">
+                            <a href="https://instagram.com/catpenayoga" target="_blank">
+                                <img style="width:50px; height:50px" src="imgs/facebook.png" alt="Facebook" class="img-fluid">
                             </a>
                         </div>
-                        <div class="col-4">
-                            <a href="#" target="_blank">
-                                <img src="#" alt="Instagram" class="img-fluid">
+                        <div class="col-auto">
+                            <a href="https://www.facebook.com/profile.php?id=100084202639653" target="_blank">
+                                <img style="width:50px; height:50px" src="imgs/instagram.png" alt="Instagram" class="img-fluid">
                             </a>
                         </div>
-                        <div class="col-4">
+                        <div class="col-auto">
                             <a href="#" target="_blank">
-                                <img src="#" alt="Email" class="img-fluid">
+                                <img style="width:50px; height:50px" src="imgs/mail.png" alt="Email" class="img-fluid">
                             </a>
                         </div>
                     </div>
