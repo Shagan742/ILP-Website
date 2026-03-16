@@ -4,6 +4,7 @@ html {
 }
 body {
     padding-top:150px;
+    background-color: white;
 }
 
 * {
@@ -164,6 +165,7 @@ body {
 
 #accordionExample, .accordion {
     border-radius:5px;
+    box-shadow: inset -5px 0px 15px 2px rgba(0, 0, 0, 0.935);
 }
 .accordion-item, .accordion-button {
     background: transparent;
