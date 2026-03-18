@@ -9,11 +9,17 @@ const app = Vue.createApp({
       this.questions = json
       console.log(this.questions)
     })
+
+    fetch('serviceQuestions.json').then(response => response.json()).then(json => {
+      this.sQuestions = json
+      console.log(this.sQuestions)
+    })
   },
     data() {
         return {
             reviews: [],
-            questions: []
+            questions: [],
+            sQuestions: []
         }
     },
     computed: {

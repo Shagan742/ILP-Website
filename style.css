@@ -191,6 +191,83 @@ body {
     font-size:20px;
 }
 
+/* services pg */
+
+.btn-active {
+    font-weight:bold;
+}
+
+#whatReiki, #testimonialReiki {
+    background-color: #F0EFEB;
+    margin-top: 50px;
+    margin-bottom:200px;
+    padding:25px;
+    box-shadow:0px 0px 15px 1px rgba(0, 0, 0, 0.235);
+}
+
+#whatReiki .card-title {
+    font-size:22px;
+}
+
+#Reiki h2, #Reiki h1 {
+    font-size:40px;
+}
+
+#Reiki h2 {
+    font-size:33px;
+}
+
+#receiveReiki {
+    background-color: #E6CCB2;
+    margin-top: 200px;
+    margin-bottom:200px;
+    padding:25px;
+    box-shadow:0px 0px 15px 1px rgba(0, 0, 0, 0.235);
+}
+
+#receiveReiki a {
+    text-decoration: none;
+    color:white;
+}
+
+#receiveReiki .btn {
+    background-color: black;
+}
+
+#receiveReiki .btn:hover {
+    transform:scale(1.1);
+}
+
+#testimonialReiki .card {
+    background-image:url(imgs/reiki-room-1024x482.jpg);
+    background-size:cover;
+    background-position-y:center;
+    height:200px;
+}
+
+#testimonialReiki .card-body {
+    backdrop-filter: brightness(50%);
+    color:white;
+    text-align:left;
+}
+
+#classDesc, #privateYoga {
+    background-color: #F0EFEB;
+    margin-top: 50px;
+    margin-bottom:200px;
+    padding:25px;
+    box-shadow:0px 0px 15px 1px rgba(0, 0, 0, 0.235);
+}
+
+#classPricing {
+    background-color: #E6CCB2;
+    margin-top: 200px;
+    margin-bottom:200px;
+    padding:25px;
+    box-shadow:0px 0px 15px 1px rgba(0, 0, 0, 0.235);
+
+}
+
 /* footer */
 footer img {
     width: 150px;
