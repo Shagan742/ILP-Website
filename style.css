@@ -206,7 +206,7 @@ body {
 }
 
 #whatReiki .card-title {
-    font-size:22px;
+    font-size:24px;
 }
 
 #Reiki h2, #Reiki h1 {
@@ -267,10 +267,42 @@ body {
     box-shadow:0px 0px 15px 1px rgba(0, 0, 0, 0.235);
 }
 
-#classPricing a {
+#classPricing a, #privateYoga a {
     text-decoration: none;
     color: white;
 }
+
+#classPricing .card, #privateYoga .card {
+    max-height:350px;
+    max-width: 18rem;
+}
+
+#Reiki p, #Yoga p, #Sound p {
+        font-size:20px;
+}
+
+#howItWorks, #benefitsSoundImmersion, #soundSessions {
+    background-color: #F0EFEB;
+    margin-top: 50px;
+    margin-bottom:200px;
+    padding:25px;
+    box-shadow:0px 0px 15px 1px rgba(0, 0, 0, 0.235);
+}
+#soundImmersion, #testimonialSound {
+    background-color: #E6CCB2;
+    margin-top: 200px;
+    margin-bottom:200px;
+    padding:25px;
+    box-shadow:0px 0px 15px 1px rgba(0, 0, 0, 0.235);
+}
+
+.catPena2 {
+    font-family: "Qwigley", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size:50px;
+}
+
 
 /* footer */
 footer img {
