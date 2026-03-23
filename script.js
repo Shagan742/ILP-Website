@@ -19,7 +19,8 @@ const app = Vue.createApp({
         return {
             reviews: [],
             questions: [],
-            sQuestions: []
+            sQuestions: [],
+            currSect:'Reiki'
         }
     },
     computed: {
