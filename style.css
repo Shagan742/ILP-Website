@@ -242,7 +242,7 @@ body {
     background-image:url(imgs/reiki-room-1024x482.jpg);
     background-size:cover;
     background-position-y:center;
-    height:200px;
+    height:40vh;
 }
 
 #testimonialReiki .card-body {
@@ -303,6 +303,62 @@ body {
   font-size:50px;
 }
 
+#testimonialSound .card {
+    background-image:url(imgs/reiki-room-1024x482.jpg);
+    background-size:cover;
+    background-position-y:center;
+    height:40vh;
+}
+
+#testimonialSound .card-body {
+    backdrop-filter: brightness(50%);
+    color:white;
+    text-align:left;
+}
+
+#soundSessions .card1 {
+    background-image:url(imgs/privSoundHealingSession.jpg);
+    background-size:cover;
+    background-position-y:center;
+}
+
+#soundSessions .card-body {
+    backdrop-filter: brightness(70%);
+    color:white;
+    text-align:left;
+}
+
+#soundSessions .card {
+    height:60vh;
+    overflow-y: auto;
+}
+
+#soundSessions .card2 {
+    background-image:url(imgs/communitySoundBath.png);
+    background-size:cover;
+    background-position-y:center;
+}
+
+#soundSessions .card3 {
+    background-image:url(imgs/privGroupSoundBath.jpg);
+    background-size:cover;
+    background-position-y:center;
+}
+
+
+#soundSessions a {
+    text-decoration: none;
+    color:#CFA84A;
+}
+
+#soundSessions .btn {
+    background-color: black;
+    border:1px solid #CFA84A;
+}
+
+#soundSessions .btn:hover {
+    transform:scale(1.1);
+}
 
 /* footer */
 footer img {
