@@ -153,10 +153,10 @@ Once you’ve made the appointment we’ll be sending you instructions on how to
                             <br>
                         </div>
                         <div class="col">
-                            <div class="accordion" id="accordionExample2" style="overflow-y: auto; max-height:400px;">
+                            <div class="accordion" id="accordionExample2" style="overflow-y: auto; max-height:400px; text-align: left;">
                                 <div class="accordion-item" v-for="(ques, index) in sQuestions">
                                     <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" v-html="ques.question" type="button" data-bs-toggle="collapse" :data-bs-target="'#collapse' + index" aria-expanded="false" :aria-controls="'collapse' + index"></button>
+                                    <button class="accordion-button collapsed" style="font-size:22px;" v-html="ques.question" type="button" data-bs-toggle="collapse" :data-bs-target="'#collapse' + index" aria-expanded="false" :aria-controls="'collapse' + index"></button>
                                     </h2>
                                     <div :id="'collapse' + index" class="accordion-collapse collapse" data-bs-parent="#accordionExample2">
                                     <div class="accordion-body" v-html="ques.answer"></div>

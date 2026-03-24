@@ -259,6 +259,10 @@ body {
     box-shadow:0px 0px 15px 1px rgba(0, 0, 0, 0.235);
 }
 
+#classDesc li {
+    font-size:20px;
+}
+
 #classPricing {
     background-color: #E6CCB2;
     margin-top: 200px;
