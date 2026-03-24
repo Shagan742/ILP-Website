@@ -360,6 +360,28 @@ body {
     transform:scale(1.1);
 }
 
+#punchpassEmbed a {
+    text-decoration: none;
+    color:#CFA84A;
+    font-size:20px;
+    
+}
+
+#punchpassEmbed .btn {
+    background-color: black;
+    border:1px solid #CFA84A;
+    padding:10px;
+}
+
+#punchpassEmbed .btn:hover {
+    transform:scale(1.1);
+}
+
+#punchpassEmbed iframe {
+    margin-bottom:200px;
+    box-shadow:0px 0px 15px 1px rgba(0, 0, 0, 0.235);
+}
+
 /* footer */
 footer img {
     width: 150px;
