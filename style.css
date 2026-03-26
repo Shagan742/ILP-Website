@@ -79,6 +79,7 @@ body {
     background-repeat: no-repeat;
     width:100%;
     background-size: cover;
+    background-attachment: fixed;
 }
 #yoga {
     background-image: url('imgs/yoga-beach.jpeg');
@@ -86,6 +87,7 @@ body {
     background-repeat: no-repeat;
     width:100%;
     background-size: cover;
+        background-attachment: fixed;
 }
 #sound {
     background-image: url('imgs/gong-scaled.jpeg');
@@ -93,6 +95,7 @@ body {
     background-repeat: no-repeat;
     width:100%;
     background-size: cover;
+        background-attachment: fixed;
 }
 
 #offeringPathways, #reiki, #yoga, #sound, #reviews {
@@ -384,6 +387,8 @@ body {
 #punchpassEmbed iframe {
     margin-bottom:200px;
     box-shadow:0px 0px 15px 1px rgba(0, 0, 0, 0.235);
+    border:1px solid black;
+    border-radius: 5px;
 }
 
 /* footer */
