@@ -43,6 +43,32 @@
             </nav>
         </header>
         <main id="app">
+            <section id="contactForm">
+                <div class="row text-center d-flex justify-content-center align-items-center">
+                    <div class="col-12 mb-5">
+                        <h1>Contact Form</h1>
+                    </div>
+                    <div class="col-md-4" style="text-align: left;">
+
+                        
+                        
+                        <!-- modify this form HTML and place wherever you want your form -->
+                        <form action="https://formspree.io/f/mvzvoekn" method="POST">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1" name="email" placeholder="name@example.com">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" name="message" rows="3"></textarea>
+                            </div>
+                            <div class="mb-3 text-center">
+                                <button style="font-size:18px;" class="btn submit" type="submit">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
             
            <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> 
         </main>        
