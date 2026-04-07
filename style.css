@@ -330,13 +330,18 @@ body {
 }
 
 #soundSessions .card-body {
-    backdrop-filter: brightness(70%);
+    backdrop-filter: brightness(45%);
     color:white;
     text-align:left;
 }
 
+#soundSessions .card1 .card-body {
+    backdrop-filter: brightness(70%);
+}
+
 #soundSessions .card {
-    height:60vh;
+    height:35vh;
+    max-height:60vh;
     overflow-y: auto;
 }
 
