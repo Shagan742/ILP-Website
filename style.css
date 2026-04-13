@@ -449,6 +449,16 @@ input, textarea {
     color:#CFA84A;
 }
 
+.backUp .btn {
+    background-color: black;
+    border:none;
+}
+
+.backUp a {
+    text-decoration: none;
+    color:white;
+}
+
 /* footer */
 footer img {
     width: 150px;
