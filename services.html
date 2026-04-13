@@ -44,16 +44,17 @@
             </nav>
         </header>
         <main id="app">
-                <div class="row mx-3 text-center d-flex justify-content-center align-items-center">
-                    <div class="col-6">
-                        <h1>{{currSect}}</h1>
-                        <br>
-                        <br>
-                        <div class="btn-group" role="group" aria-label="Basic outlined example">
-                            <button type="button" @click="currSect='Reiki'" :class="{'btn-active' : currSect==='Reiki'}" class="btn btn-outline">Reiki</button>
-                            <button type="button" @click="currSect='Yoga'" :class="{'btn-active' : currSect==='Yoga'}" class="btn btn-outline">Yoga</button>
-                            <button type="button" @click="currSect='Sound'" :class="{'btn-active' : currSect==='Sound'}" class="btn btn-outline">Sound</button>
+                <div class="row text-center d-flex justify-content-center align-items-center">
+                    <div class="col-12 col-md-6 mx-auto">
+                        <h1 class="mb-4">{{currSect}}</h1>
+                        <div class="d-flex justify-content-center">
+                            <div class="btn-group flex-wrap" role="group" aria-label="Basic outlined example">
+                                <button type="button" @click="currSect='Reiki'" :class="{'btn-active' : currSect==='Reiki'}" class="btn btn-outline">Reiki</button>
+                                <button type="button" @click="currSect='Yoga'" :class="{'btn-active' : currSect==='Yoga'}" class="btn btn-outline">Yoga</button>
+                                <button type="button" @click="currSect='Sound'" :class="{'btn-active' : currSect==='Sound'}" class="btn btn-outline">Sound</button>
+                            </div>
                         </div>
+                        
                     </div>
                 </div>
             <section id="Reiki" v-if="currSect==='Reiki'">
