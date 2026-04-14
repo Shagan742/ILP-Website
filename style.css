@@ -19,17 +19,17 @@ body {
 }
 
 *::-webkit-scrollbar {
-  width: 6px;               /* width of scrollbar */
+  width: 3px;               /* width of scrollbar */
 }
 
 *::-webkit-scrollbar-track {
-  background: #ffffff67;      /* track background */
+  background: rgb(255, 255, 255);  /*     track background */
   border-radius: 4px;
 }
 
 *::-webkit-scrollbar-thumb {
-  background: rgba(0, 0, 0, 0.486);          /* scrollbar handle color */
-  border-radius: 4px;
+  background-image: linear-gradient(#CFA84A, rgb(255, 217, 0), #CFA84A );          /* scrollbar handle color */
+  border-radius: 40px;
 }
 
 /* navbar */
@@ -189,7 +189,7 @@ body {
 
 #accordionExample, .accordion {
     border-radius:5px;
-    box-shadow: inset -5px 0px 15px 2px rgba(0, 0, 0, 0.935);
+    box-shadow: inset -5px 0px 15px 2px rgba(0, 0, 0, 0.493);
 }
 .accordion-item, .accordion-button {
     background: transparent;
@@ -215,6 +215,11 @@ body {
     font-size:20px;
 }
 
+#meetCatherine img {
+    box-shadow:0px 0px 15px 1px rgba(0, 0, 0, 0.235);
+    border:1px solid #ffc400;
+}
+
 /* services pg */
 
 .btn-active {
@@ -231,6 +236,29 @@ body {
 
 #whatReiki .card-title {
     font-size:24px;
+}
+
+#whatReiki .card {
+    box-shadow:0px 0px 5px 1px rgba(0, 0, 0, 0.235);
+    border:1px solid #CFA84A;
+    background-image:linear-gradient(-50deg, rgba(255, 255, 255, 0.016), rgba(128, 128, 128, 0.185), rgba(255, 255, 255, 0.016));
+}
+
+#whatReiki .card:hover {
+    animation-name: scaleUp;
+    animation-duration: 1s;
+}
+
+@keyframes scaleUp {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 #Reiki h2, #Reiki h1 {
@@ -259,7 +287,8 @@ body {
 }
 
 #receiveReiki .btn:hover {
-    transform:scale(1.1);
+    animation-name: scaleUp;
+    animation-duration: 1s;
 }
 
 #testimonialReiki .card {
@@ -267,12 +296,19 @@ body {
     background-size:cover;
     background-position-y:center;
     height:40vh;
+    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.235);
+     border:1px solid #CFA84A;
 }
 
 #testimonialReiki .card-body {
     backdrop-filter: brightness(50%);
     color:white;
     text-align:left;
+}
+
+#testimonialReiki .card:hover {
+    animation-name: scaleUp;
+    animation-duration: 1s;
 }
 
 #classDesc, #privateYoga {
@@ -324,6 +360,16 @@ body {
     box-shadow:0px 0px 15px 1px rgba(0, 0, 0, 0.235);
 }
 
+#soundImmersion img {
+    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.235);
+    border:1px solid #CFA84A;
+}
+
+#benefitsSoundImmersion img {
+    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.235);
+    border:1px solid #CFA84A;
+}
+
 .catPena2 {
     font-family: "Qwigley", cursive;
   font-weight: 400;
@@ -336,6 +382,13 @@ body {
     background-size:cover;
     background-position-y:center;
     height:40vh;
+    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.235);
+     border:1px solid #CFA84A;
+}
+
+#testimonialSound .card:hover {
+    animation-name: scaleUp;
+    animation-duration: 1s;
 }
 
 #testimonialSound .card-body {
@@ -452,6 +505,11 @@ input, textarea {
 .backUp .btn {
     background-color: black;
     border:none;
+}
+
+.backUp .btn:hover {
+    animation-name: scaleUp;
+    animation-duration: 1s;
 }
 
 .backUp a {
