@@ -93,14 +93,14 @@
                 </div>
             </section>
             <section id="reviews">
-                    <div id="carouselExample" class="carousel slide">
+                    <div id="carouselExample" class="carousel slide" >
                         <div class="carousel-inner">
                             <div class="carousel-item" v-for="(bunch, index) in threeCardsPerSlide" :key="index" :class="{ active: index === 0 }">
                                 <div class="row d-flex justify-content-center align-items-center">
                                     <div class="col-md-3 my-5 col-sm-10 d-flex justify-content-center" v-for="(rev, revIndex) in bunch">
                                         <div class="card" style="height:500px; max-width:300px; overflow-y: auto;">
                                             <div class="card-body" :class="{ 'd-flex flex-column justify-content-center text-center': index===threeCardsPerSlide.length-1 && revIndex===bunch.length-1}">
-                                                <h5 class="card-title">{{rev.stars}}</h5>
+                                                <h5 class="card-title" style="color:#ecb940">{{rev.stars}}</h5>
                                                 <p class="card-text">{{rev.review}}</p>
                                                 <p class="card-text2" v-if="!(index === threeCardsPerSlide.length - 1 && revIndex === bunch.length - 1)">
                                                     <strong>{{rev.name}}</strong>
